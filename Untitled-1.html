@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Digital Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head><script src="script.js"></script>
+<body>
+    <header>
+        <div class="top-nav">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for dishes or drinks">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="cart">
+                <a href="#" class="cart-link">Cart</a>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#antipasti">Antipasti e Bevande</a></li>
+                <li><a href="#primi">Primi e Secondi</a></li>
+                <li><a href="#dolci">Dolci</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <nav class="shortcut-nav">
+        <button onclick="scrollToSection('antipasti')">Antipasti e Bevande</button>
+        <button onclick="scrollToSection('primi')">Primi e Secondi</button>
+        <button onclick="scrollToSection('dolci')">Dolci</button>
+    </nav>
+
+    <main class="container">
+        <section id="antipasti" class="menu-section">
+            <h2>Antipasti e Bevande</h2>
+            <div class="menu-item">
+                <img src="beer.jpg" alt="Beer">
+                <div class="details">
+                    <span>Birra</span>
+                    <span class="price">€3.5</span>
+                    <button onclick="orderItem('Birra')">Order</button>
+                </div>
+            </div>
+            <!-- Add more menu items as needed -->
+        </section>
+
+        <section id="primi" class="menu-section">
+            <h2>Primi e Secondi</h2>
+            <div class="menu-item">
+                <img src="pasta.jpg" alt="Pasta">
+                <div class="details">
+                    <span>Piatto di Pasta</span>
+                    <span class="price">€8</span>
+                    <button onclick="orderItem('Piatto di Pasta')">Order</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="salad.jpg" alt="Salad">
+                <div class="details">
+                    <span>Insalata</span>
+                    <span class="price">€5</span>
+                    <button onclick="orderItem('Insalata')">Order</button>
+                </div>
+            </div>
+            <!-- Add more menu items as needed -->
+        </section>
+
+        <section id="dolci" class="menu-section">
+            <h2>Dolci</h2>
+            <!-- Add menu items for desserts -->
+        </section>
+
+        <a href="#" class="order-btn">Ordina Ora</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nome Ristorante. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
