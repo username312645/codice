@@ -11,7 +11,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open sito.html",
-            "file": "c:\\Users\\Parcello\\Desktop\\jscsshtml\\sito.html"
+            "file": "c:\\Users\\Parcello\\Desktop\\jscsshtml\\ordini.html"
         }
     ]
 }
